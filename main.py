@@ -20,10 +20,10 @@ tts.tts_to_file(
     
     temperature=0.3,
     top_k=20, 
-    top_p=0.5,
-    repetition_penalty=4.0,        
+    top_p=0.4,
+    repetition_penalty=4.6,        
     
-    speed=0.97,                 
+    speed=0.95,                 
     enable_text_splitting=True,  
 
 )
