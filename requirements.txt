@@ -1,4 +1,9 @@
+
+torch==2.2.2
+torchaudio==2.2.2
 TTS==0.22.0
-torch
-scipy
-pydub
+transformers==4.37.2
+scipy==1.13.0
+librosa==0.10.2
+numpy==1.26.4
+soundfile==0.12.1
