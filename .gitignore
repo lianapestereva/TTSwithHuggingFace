@@ -1,4 +1,12 @@
 .venv
-__pycache__
+__pycache__/
 .idea
 *.wav
+
+.venv/
+*.mp3
+*.log
+*.pth
+outputs/
+finetune/outputs/
+data/wavs/*.wav  

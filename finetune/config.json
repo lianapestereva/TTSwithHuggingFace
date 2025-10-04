@@ -1,0 +1,43 @@
+{
+  "run_name": "xtts_finetune_bio",
+  "output_path": "C:\\Users\\user\\Documents\\TTSwithHuggingFace\\finetune\\outputs",
+  "model": "xtts",
+  "restore_path": "C:\\Users\\user\\AppData\\Local\\tts\\tts_models--multilingual--multi-dataset--xtts_v2\\model.pth",
+  "use_d_vector": false,
+  "use_speaker_embedding": false,
+  "datasets": [
+    {
+      "name": "bio_dataset",
+      "path": "C:\\Users\\user\\Documents\\TTSwithHuggingFace\\data",
+      "meta_file_train": "metadata.csv",
+      "language": "ru",
+      "formatter": "ljspeech"
+    }
+  ],
+  "dataset_config": {
+    "eval_split_size": 0.02,
+    "add_blank": false,
+    "min_audio_len": 0.2,
+    "max_audio_len": 24.0,
+    "min_text_len": 0,
+    "max_text_len": 200,
+    "preprocess_meta": false,
+    "filter_unusual_symbols": false
+  },
+  "batch_size": 2,
+  "eval_batch_size": 1,
+  "num_loader_workers": 0,
+  "num_eval_loader_workers": 0,
+  "run_eval": false,
+  "test_delay_epochs": -1,
+  "epochs": 20,
+  "lr": 1e-05,
+  "mixed_precision": false,
+  "use_noise_augment": false,
+  "use_speaker_encoder_as_loss": false,
+  "max_text_len": 200,
+  "max_wav_len": 240000,
+  "gradual_training": null,
+  "use_dataloader": true,
+  "eval_split_size": 0.02
+}

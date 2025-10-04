@@ -3,10 +3,16 @@ import scipy.io.wavfile
 from utils import read_text_file
 import torch
 from TTS.api import TTS
-
-print("Загрузка модели...")
-tts = TTS(model_name="tts_models/multilingual/multi-dataset/xtts_v2", gpu=False)
  
+print("Загрузка дообученной модели...")
+tts = TTS(
+    model_path="./finetune/outputs/best_model.pth",  
+    config_path="./finetune/outputs/config.json",   
+    progress_bar=True,
+    gpu=False
+)
+
+
 text = read_text_file("to_read.txt")
 
 tts.tts_to_file(
