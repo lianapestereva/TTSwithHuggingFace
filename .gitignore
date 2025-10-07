@@ -10,3 +10,5 @@ __pycache__/
 outputs/
 finetune/outputs/
 data/wavs/*.wav  
+*.json
+finetune/*.json
